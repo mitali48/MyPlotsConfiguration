@@ -3,7 +3,7 @@ cuts = {}
 _tmp = [
     #'Lepton_pdgId[0]*Lepton_pdgId[1] == -11*13',
     'Lepton_pt[0] > 25.',
-    'Lepton_pt[1] > 10.',
+    'Lepton_pt[1] > 20.',
     '(abs(Lepton_pdgId[1]) == 13 || Lepton_pt[1] > 13.)',
     '(nLepton >= 2 && Alt(Lepton_pt,2, 0) < 10.)',
     'ptll>15',
@@ -14,6 +14,7 @@ _tmp = [
 
 preselections = ' && '.join(_tmp)
 
+'''
 cuts['Zee']  = {
    'expr' : '(Lepton_pdgId[0] * Lepton_pdgId[1] == -11*11) && mll > 60 && mll < 120',
    'categories' : {
@@ -55,6 +56,7 @@ cuts['hww2l2v_13TeV_sr'] = {
         'Inc': 'mll>12',
     }
 }
+'''
 
 cuts['hww2l2v_13TeV_ww']  = {
    'expr' : 'wwcr && Lepton_pdgId[0]*Lepton_pdgId[1] == -11*13',

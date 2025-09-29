@@ -86,7 +86,7 @@ class btagSFlight {
 };
 
 btagSFlight::btagSFlight(TString eff_map, const string year, TString algo_extension = "") {
-  std::string home = "/afs/cern.ch/work/s/sblancof/private/Run3Analysis/Run2024_ReRecoCDE_PromptFGHI/mkShapesRDF/mkShapesRDF/processor/data/jsonpog-integration/POG/BTV/" + year;
+  std::string home = "/afs/cern.ch/user/m/misharma/private/Latinos/HWWRUn3/mkShapesRDF/mkShapesRDF/processor/data/jsonpog-integration/POG/BTV/" + year;
   cset = CorrectionSet::from_file(home + "/btagging.json.gz");
 
   // deepJet -> ljet_eff

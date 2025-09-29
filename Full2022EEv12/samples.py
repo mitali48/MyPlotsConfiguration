@@ -14,7 +14,8 @@ dataSteps    = 'DATAl2loose2022EEv12__sblancof__l2loose'
 ###### Tree base directory for the site ######
 ##############################################
 treeBaseDir = '/eos/cms/store/group/phys_higgs/cmshww/calderon/HWWNano/'
-treeBaseDir_data = '/eos/user/s/sblancof/MC/'
+treeBaseDir_data = '/eos/cms/store/group/phys_higgs/cmshww/calderon/HWWNano/'
+#treeBaseDir_data = '/eos/user/s/sblancof/MC/'
 
 limitFiles = -1
 
@@ -104,6 +105,9 @@ DataTrig = {
 ############ MC COMMON ##################
 #########################################
 
+# mcCommonWeightNoMatch = 'XSWeight*METFilter_Common'
+# mcCommonWeight        = 'XSWeight*METFilter_Common*PromptGenLepMatch2l'
+
 mcCommonWeightNoMatch = 'XSWeight*METFilter_Common*SFweight'
 mcCommonWeight        = 'XSWeight*METFilter_Common*PromptGenLepMatch2l*SFweight'
 
@@ -134,7 +138,7 @@ files = nanoGetSampleFiles(mcDirectory, 'WWTo2L2Nu')
 
 samples['WW'] = {
     'name': files,
-    'weight': mcCommonWeight + "* wwNLL",
+    'weight': mcCommonWeight, #+ "* wwNLL",
     'FilesPerJob': 5
 }
 
@@ -244,11 +248,11 @@ samples['VVV'] = {
 ###############  SIGNALS  #################
 ###########################################
 
-samples['ggH_hww'] = {
-    'name': nanoGetSampleFiles(mcDirectory, 'GluGluHToWWTo2L2Nu_M125'),
-    'weight': mcCommonWeight + ' * Weight2MINLO * 1092.7640/1073.2567',
-    'FilesPerJob': 3,
-}
+# samples['ggH_hww'] = {
+#     'name': nanoGetSampleFiles(mcDirectory, 'GluGluHToWWTo2L2Nu_M125'),
+#     'weight': mcCommonWeight + ' * Weight2MINLO * 1092.7640/1073.2567',
+#     'FilesPerJob': 3,
+# }
 
 samples['qqH_hww'] = {
     'name': nanoGetSampleFiles(mcDirectory, 'VBFHToWWTo2L2Nu_M125'),

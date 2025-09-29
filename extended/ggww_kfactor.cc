@@ -145,8 +145,8 @@ ggww_K_producer::ggww_K_producer(){
   // kfactor_PDFReplicaDn
   // kfactor_PDFReplicaUp
   
-  TString fileIn = "/eos/user/s/sblancof/Run2Analysis/mkShapesRDF/examples/extended/Kfactor_Collected_ggHZZ_2l2l_NLO_NNPDF_NarrowWidth_13TeV.root";
-  TString fileIn_NNLO = "/eos/user/s/sblancof/Run2Analysis/mkShapesRDF/examples/extended/Kfactor_Collected_ggHZZ_2l2l_NNLO_NNPDF_NarrowWidth_13TeV.root";
+  TString fileIn = "/afs/cern.ch/user/m/misharma/private/Latinos/HWWRUn3/PlotsConfigurationsRun3/WW_Run3/MyPlotsConfiguration/extended/Kfactor_Collected_ggHZZ_2l2l_NLO_NNPDF_NarrowWidth_13TeV.root";
+  TString fileIn_NNLO = "/afs/cern.ch/user/m/misharma/private/Latinos/HWWRUn3/PlotsConfigurationsRun3/WW_Run3/MyPlotsConfiguration/extended/Kfactor_Collected_ggHZZ_2l2l_NNLO_NNPDF_NarrowWidth_13TeV.root";
   
   TFile* f_ggzz	= new TFile(fileIn);
   TFile* f_ggzz_NNLO = new TFile(fileIn_NNLO);

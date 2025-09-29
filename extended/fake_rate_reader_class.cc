@@ -380,7 +380,7 @@ fake_rate_reader::fake_rate_reader( TString year , TString ele_WP, TString muon_
   electron_tight_charge_ = electron_tight_charge; // ['std','ss']
 
   TString ele_tight_suffix = "LooseID";
-  TString mkShapesRDF_base = "/afs/cern.ch/work/s/sblancof/private/Run3Analysis/Run2024_ReRecoCDE_PromptFGHI/mkShapesRDF/examples/PlotsConfigurationsRun3/ggH/";
+  TString mkShapesRDF_base = "/afs/cern.ch/user/m/misharma/private/Latinos/HWWRUn3/PlotsConfigurationsRun3/WW_Run3/MyPlotsConfiguration/";
   
   // Fake rate input files
   TString fake_muon_file_name_10 = mkShapesRDF_base + "/data/fakerate/" + year + "/cut_TightID_pfIsoLoose_HWW_tthmva_" + muon_WP + "/MuonFR_jet10.root";
